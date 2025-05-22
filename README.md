@@ -1,6 +1,7 @@
 # 📲 ThingSpeak App
 
-**ThingSpeak App** è un'applicazione sviluppata in Flutter che consente di visualizzare dati provenienti da un canale pubblico su [ThingSpeak](https://thingspeak.com/), una piattaforma IoT per la raccolta, visualizzazione e analisi di dati da sensori. L'app è pensata per mostrare in tempo reale parametri ambientali come temperatura, umidità, pressione e la condizione di pioggia, organizzati in grafici e widget interattivi.
+**MeteoCore App** è un'applicazione sviluppata in Flutter che consente di visualizzare dati provenienti da un canale pubblico su [ThingSpeak](https://thingspeak.com/), una piattaforma IoT per la raccolta, visualizzazione e analisi di dati da sensori. L'app è pensata per mostrare in tempo reale parametri ambientali come temperatura, umidità, pressione e la condizione di pioggia, organizzati in grafici e widget interattivi. Questa applicazione rappresenta l’estensione ad alto livello del lavoro svolto sul sistema embedded, disponibile nel seguente ['Repository MeteoCore'](https://github.com/lucabellantee/MeteoCore)
+
 
 ---
 
@@ -47,7 +48,7 @@ L'app si connette al canale ThingSpeak configurato e visualizza:
 ### Clona il repository
 
 ```bash
-git clone https://github.com/lucabellantee/thingspeak_app.git
+git clone https://github.com/lucabellantee/MeteoCore-App.git
 cd thingspeak_app
 ```
 
