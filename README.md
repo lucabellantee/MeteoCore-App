@@ -1,18 +1,17 @@
 # 📲 ThingSpeak App
 
-**MeteoCore App** è un'applicazione sviluppata in Flutter che consente di visualizzare dati provenienti da un canale pubblico su [ThingSpeak](https://thingspeak.com/), una piattaforma IoT per la raccolta, visualizzazione e analisi di dati da sensori. L'app è pensata per mostrare in tempo reale parametri ambientali come temperatura, umidità, pressione e la condizione di pioggia, organizzati in grafici e widget interattivi. Questa applicazione rappresenta l’estensione ad alto livello del lavoro svolto sul sistema embedded, disponibile nel seguente ['Repository MeteoCore'](https://github.com/lucabellantee/MeteoCore)
-
+MeteoCore App is a Flutter application that allows you to view data coming from a public channel on [ThingSpeak](https://thingspeak.com/), an IoT platform for collecting, visualizing, and analyzing sensor data. The app is designed to display real-time environmental parameters such as temperature, humidity, pressure, and rain condition, organized in charts and interactive widgets. This application represents a high-level extension of the embedded system work, available in the following ['Repository MeteoCore'](https://github.com/lucabellantee/MeteoCore).
 
 ---
 
-## 🌐 Panoramica
+## 🌐 Overview
 
-L'app si connette al canale ThingSpeak configurato e visualizza:
+The app connects to the configured ThingSpeak channel and displays:
 
-- 📈 **Grafici** per temperatura, umidità e pressione.
-- 🌧️ **Widget circolari** che indicano visivamente se sta piovendo.
-- 🔄 **Aggiornamento automatico** dei dati ogni pochi secondi.
-- ✅ **Compatibilità multipiattaforma**: Android, iOS, Web (supporto limitato), macOS, Windows.
+- 📈 **Charts** for temperature, humidity, and pressure.
+- 🌧️ **Circular widgets** visually indicating if it is raining.
+- 🔄 **Automatic data refresh** every few seconds.
+- ✅ **Cross-platform compatibility**:  Android, iOS, Web (limited support), macOS, Windows.
 
 ---
 
