@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart'; // ⬅️ importa dotenv
 import 'screens/home_screen.dart';
 import 'services/thingspeak_service.dart';
 
-void main() {
+Future<void> main() async {
+  // ⬇️ Carica il file .env PRIMA di usare dotenv.env
+  await dotenv.load(fileName: ".env");
+
+  // ⬇️ Poi avvia l'app
   runApp(const MyApp());
 }
 

@@ -2,14 +2,14 @@ import 'dart:convert';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import '../models/chart_data.dart';
 import 'package:intl/intl.dart';
 
 class ThingSpeakService extends ChangeNotifier {
-  // Usa i tuoi valori corretti qui
-  final String channelId = '2956914';
-  final String apiKey = 'SOWW7V7XVLLN6GUH';
 
+  String get channelId => dotenv.env['THINGSPEAK_CHANNEL_ID'] ?? '';
+  String get apiKey => dotenv.env['THINGSPEAK_API_KEY'] ?? '';
   List<ChartData> field1Data = [];
   List<ChartData> field2Data = [];
   List<ChartData> field3Data = [];

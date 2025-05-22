@@ -25,11 +25,6 @@ L'app si connette al canale ThingSpeak configurato e visualizza:
 
 ---
 
-## 📸 Screenshot
-
-*Aggiungi qui screenshot della schermata principale, grafici e widget.*
-
----
 
 ## 📦 Tech Stack
 
@@ -72,15 +67,10 @@ flutter run
 
 ## 🔍 Configurazione
 
-Il codice punta a un canale ThingSpeak pubblico. Se desideri cambiare canale o chiave:
+Il codice punta a un canale ThingSpeak pubblico, quindi occorre eseguire la seguente procedura:
 
-1. Apri `lib/services/thingspeak_service.dart`
-2. Modifica l'URL con il tuo `channel_id` e la chiave (se necessaria):
-
-```dart
-final String channelId = "TUO_CHANNEL_ID";
-final String readApiKey = "TUO_API_KEY"; // Solo se il canale è privato
-```
+1. Apri `.env`
+2. Modifica le variabili 'THINGSPEAK_CHANNEL_ID' e 'THINGSPEAK_API_KEY' (Per reperire questi dati potete scrivere ai contributors).
 
 ---
 
@@ -97,7 +87,8 @@ thingspeak_app/
 │   │   └── channel_data.dart      # Modelli per rappresentare i dati JSON
 │   ├── widgets/
 │   │   ├── chart_widget.dart      # Grafici FLChart
-│   │   └── rain_indicator.dart    # Widget circolare pioggia
+│   │   └── indicator_widget.dart    # Widget circolare pioggia
+|   |   └── status_widget.dart # Indica lo status
 │   └── screens/
 │       └── home_screen.dart       # Schermata principale
 │
