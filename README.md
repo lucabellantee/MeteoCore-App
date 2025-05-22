@@ -70,7 +70,7 @@ flutter run
 
 Il codice punta a un canale ThingSpeak pubblico, quindi occorre eseguire la seguente procedura:
 
-1. Apri `.env`
+1. Crea il file `.env` all'altezza del file 'pubspec.yaml'
 2. Modifica le variabili 'THINGSPEAK_CHANNEL_ID' e 'THINGSPEAK_API_KEY' (Per reperire questi dati potete scrivere ai contributors).
 
 ---
