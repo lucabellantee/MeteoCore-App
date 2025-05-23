@@ -36,7 +36,7 @@ The app connects to the configured ThingSpeak channel and displays:
 
 ---
 
-## ⚙️ Installazione e Avvio
+## ⚙️ Installation and Startup
 
 ### Prerequisiti
 
@@ -166,7 +166,6 @@ Have feedback or want to collaborate?
 
 ## 🔮 To-Do / Future Developments
 
-- [ ] Add multi-channel support
 - [ ] Push notifications based on configurable thresholds
 - [ ] Dark/light mode
 - [ ] Temporary offline data saving
