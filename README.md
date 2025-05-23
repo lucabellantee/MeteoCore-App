@@ -15,13 +15,13 @@ The app connects to the configured ThingSpeak channel and displays:
 
 ---
 
-## 🧩 Funzionalità
+## 🧩 Features
 
-- **Visualizzazione dati live** da ThingSpeak
-- **Grafici dinamici** per monitoraggio di trend
-- **Interfaccia reattiva** e ottimizzata per dispositivi mobili
-- **Integrazione con API REST** di ThingSpeak
-- **Supporto a più piattaforme** tramite Flutter
+- **Live data visualization** from ThingSpeak
+- **Dynamic charts** for trend monitoring
+- **Responsive interface** optimized for mobile devices
+- **Integration with ThingSpeak REST API**
+- **Multi-platform support** via Flutter
 
 ---
 
@@ -30,9 +30,9 @@ The app connects to the configured ThingSpeak channel and displays:
 
 - **Flutter 3.x**
 - **Dart**
-- **HTTP** package per le richieste REST
-- **fl_chart** per i grafici
-- **Provider (opzionale)** per la gestione dello stato
+- **HTTP** package for REST requests
+- **fl_chart** for charts
+- **Provider (opzionale)** for state management
 
 ---
 
@@ -40,24 +40,24 @@ The app connects to the configured ThingSpeak channel and displays:
 
 ### Prerequisiti
 
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) installato
-- Un dispositivo/emulatore configurato (Android Studio o VS Code)
-- Connessione a Internet
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) installed
+- A configured device/emulator (Android Studio or VS Code)
+- Internet connection
 
-### Clona il repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/lucabellantee/MeteoCore-App.git
 cd thingspeak_app
 ```
 
-### Installa le dipendenze
+### Install dependencies
 
 ```bash
 flutter pub get
 ```
 
-### Avvia l'app
+### Run the app
 
 ```bash
 flutter run
@@ -65,16 +65,16 @@ flutter run
 
 ---
 
-## 🔍 Configurazione
+## 🔍  Configuration
 
-Il codice punta a un canale ThingSpeak pubblico, quindi occorre eseguire la seguente procedura:
+The code points to a public ThingSpeak channel, so follow these steps:
 
-1. Crea il file `.env` all'altezza del file 'pubspec.yaml'
-2. Modifica le variabili 'THINGSPEAK_CHANNEL_ID' e 'THINGSPEAK_API_KEY' (Per reperire questi dati potete scrivere ai contributors).
+1. Create the `.env` file at the same level as 'pubspec.yaml'
+2. Modify the variables THINGSPEAK_CHANNEL_ID and THINGSPEAK_API_KEY (to obtain these data you can contact the contributors).
 
 ---
 
-## 🗂️ Struttura del Progetto
+## 🗂️  Project Structure
 
 ```plaintext
 thingspeak_app/
@@ -98,18 +98,18 @@ thingspeak_app/
 
 ---
 
-## 📊 API ThingSpeak
+## 📊 ThingSpeak API
 
-L'app utilizza il seguente endpoint ThingSpeak per recuperare i dati:
+The app uses the following ThingSpeak endpoint to fetch data:
 
 ```
 https://api.thingspeak.com/channels/{channel_id}/feeds.json?results=30
 ```
 
-- `channel_id`: ID del canale ThingSpeak
-- `results`: numero di letture da recuperare (es. 30 per gli ultimi 30 punti)
+- `channel_id`: ThingSpeak channel ID
+- `results`: number of readings to retrieve (e.g., 30 for the last 30 data points)
 
-Esempio di risposta:
+Example response:
 ```json
 {
   "feeds": [
@@ -129,19 +129,19 @@ Esempio di risposta:
 
 ## 🧪 Testing
 
-Per eseguire i test:
+To run tests:
 
 ```bash
 flutter test
 ```
 
-Attualmente sono inclusi test di base. È possibile espandere la copertura con test di widget e unitari per la logica dei dati.
+Currently, basic tests are included. You can expand coverage with widget and unit tests for data logic.
 
 ---
 
 ## 👨‍💻 Contributor
 
-Sviluppato con ❤️ da:
+Developed with ❤️ by:
 
 - [Luca Bellantee](https://github.com/lucabellantee)
 - [Micol Zazzarini](https://github.com/MicolZazzarini)
@@ -150,23 +150,23 @@ Sviluppato con ❤️ da:
 
 ## 📄 Licenza
 
-Distribuito sotto licenza MIT. Vedi [LICENSE](LICENSE) per maggiori dettagli.
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 📬 Contatti
+## 📬 Contacts
 
-Hai feedback o vuoi collaborare?
+Have feedback or want to collaborate?
 
-- Apri una [Issue](https://github.com/lucabellantee/thingspeak_app/issues)
-- Invia una Pull Request
-- Oppure contatta direttamente i contributor via GitHub
+- Open an [Issue](https://github.com/lucabellantee/thingspeak_app/issues)
+- Send a Pull Request
+- Or contact the contributors directly via GitHub
 
 ---
 
-## 🔮 To-Do / Futuri sviluppi
+## 🔮 To-Do / Future Developments
 
-- [ ] Aggiungere supporto multi-canale
-- [ ] Notifiche push in base a soglie configurabili
-- [ ] Modalità dark/light
-- [ ] Salvataggio offline temporaneo dei dati
+- [ ] Add multi-channel support
+- [ ] Push notifications based on configurable thresholds
+- [ ] Dark/light mode
+- [ ] Temporary offline data saving
